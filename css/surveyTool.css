@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+body {
+	font-family:Sans-Serif;
+}
+
+#qStateHeader {
+	margin-top: 0.3em;
+    margin-bottom: 0.2em;
+}
+
+#questionGroupHeader {
+	color:#00467f;
+	margin-bottom:0;
+}
+
+.questionButtonText {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 5em;
+	text-align:left;
+}
+
+.questionIcon {
+	background: no-repeat url('../button-01.png');
+	width:4em;
+	height:5em;
+	float:left;
+	margin-top:0.5em;
+}
+
+.questionButtons {
+	color: black;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+	margin-bottom:0.7em;
+	margin-left:0.7em;
+	width:48%;
+	background:none;
+	border:none;
+	outline:none;
+}
+
+
+
+.selectedQuestionIcon {
+	background: no-repeat url('../button-02.png');
+	display:block;
+	width:4em;
+	height:5em;
+	float:left;	
+	margin-top:0.5em;
+}
+
+ .questionGroupButtons {
+  background-color: #418ccb;
+  color: white;
+  cursor: pointer;
+  width: 95%;
+  height:3em;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.4s;
+  margin:4px 0;
+  border-radius:7px;
+}
+
+.selectedGroupButton {
+	background-color:grey;
+}
+
+.filterBox {
+	float:left;
+	max-width:297px;
+	border-radius: 5px;
+    padding: 4px;
+	margin:8px 0;
+}
+
+  
+ .google-visualization-controls-label {
+	 font-weight:bold;
+ }
+
+.filterDropdown {
+	background-color: lightgrey;
+    height: 3em;
+    padding-left: 0.2em;
+    border: 1px solid lightgrey;
+    border-radius: 0.5em;
+    width: 95%;
+}
+
+.surveyVisual {
+	float:left;
+	width:850px;
+}
+
+.surveyChartBox {
+	 float:left;
+   margin-top:4px;
+   border-radius:5px;
+   padding-bottom:60px;
+   -webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.35);
+box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.35);
+}
+
+.chartWrappers {
+	float:left;
+}
+
+
+ #qTableDownload{
+	float:right;
+	text-decoration:none;
+ }
+
+a {
+	color:#418ccb;
+}
+
+.downloadCSV {
+	text-decoration: none;
+    height: 2em;
+    padding-left: 0.2em;
+	padding-right:0.2em;
+    display: block;
+    line-height: 2em;
+	color:black;
+}
+
+.downloadCSV:hover{
+	background-color:grey;
+}
+
+
+
+#qChartDownload {
+	float:right;
+}
+
+.downloadPNG {
+	text-decoration: none;
+    height: 2em;
+    padding-left: 0.2em;
+	padding-right:0.2em;
+    display: block;
+    line-height: 2em;
+	color:black;
+}
+
+.downloadPNG:hover{
+	background-color:grey;
+}
+
+
+tr:nth-child(odd) {
+	background-color:#fafafa !important;
+}
+
+tr:nth-child(even) {
+	background-color:#e0e0e0 !important;
+}
+
+tr.google-visualization-table-tr-head{
+	background-color:#4a6a83 !important;
+	color:#fafafa;
+	font-weight:normal;
+}
+
+.google-visualization-table .gradient {
+	background-image:none !important;
+}
+
+.tableBox {
+	float:left;
+}
+
+ 
+#dashMenuBox {
+	width:242px;
+	float:left;
+}
+
+.dashboards {
+	display:none;
+}
+
+#qTable .google-visualization-table-th {
+	text-align:left;
+}
+
+#qTable .google-visualization-table-td {
+	text-align:left;
+}
+
+
+
