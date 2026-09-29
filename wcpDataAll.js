@@ -2062,21 +2062,21 @@ WCP["2023"]["q14_1"] = [
     ['All', 'Neutral', 248, 21.53],
     ['All', 'Somewhat Agree', 319, 27.69],
     ['All', 'Strongly Agree', 110, 9.55],
-    ['CA', 'Strongly Disagree', 146, 12.67],
-    ['CA', 'Somewhat Disagree', 137, 11.89],
-    ['CA', 'Neutral', 152, 13.19],
-    ['CA', 'Somewhat Agree', 140, 12.15],
-    ['CA', 'Strongly Agree', 56, 4.86],
-    ['OR', 'Strongly Disagree', 41, 3.56],
-    ['OR', 'Somewhat Disagree', 55, 4.77],
-    ['OR', 'Neutral', 38, 3.3],
-    ['OR', 'Somewhat Agree', 72, 6.25],
-    ['OR', 'Strongly Agree', 17, 1.48],
-    ['WA', 'Strongly Disagree', 37, 3.21],
-    ['WA', 'Somewhat Disagree', 59, 5.12],
-    ['WA', 'Neutral', 58, 5.03],
-    ['WA', 'Somewhat Agree', 107, 9.29],
-    ['WA', 'Strongly Agree', 37, 3.21]
+    ['CA', 'Strongly Disagree', 146, 23.14],
+    ['CA', 'Somewhat Disagree', 137, 21.71],
+    ['CA', 'Neutral', 152, 24.09],
+    ['CA', 'Somewhat Agree', 140, 22.19],
+    ['CA', 'Strongly Agree', 56, 8.87],
+    ['OR', 'Strongly Disagree', 41, 18.39],
+    ['OR', 'Somewhat Disagree', 55, 24.66],
+    ['OR', 'Neutral', 38, 17.04],
+    ['OR', 'Somewhat Agree', 72, 32.29],
+    ['OR', 'Strongly Agree', 17, 7.62],
+    ['WA', 'Strongly Disagree', 37, 12.42],
+    ['WA', 'Somewhat Disagree', 59, 19.8],
+    ['WA', 'Neutral', 58, 19.46],
+    ['WA', 'Somewhat Agree', 107, 35.91],
+    ['WA', 'Strongly Agree', 37, 12.42]
 ]
 WCP["2023"]["q14_2"] = [
     ['State', 'Agreement Level', 'Count', 'Percent'],
@@ -2085,21 +2085,21 @@ WCP["2023"]["q14_2"] = [
     ['All', 'Neutral', 353, 30.67],
     ['All', 'Somewhat Agree', 238, 20.68],
     ['All', 'Strongly Agree', 103, 8.95],
-    ['CA', 'Strongly Disagree', 136, 11.82],
-    ['CA', 'Somewhat Disagree', 128, 11.12],
-    ['CA', 'Neutral', 201, 17.46],
-    ['CA', 'Somewhat Agree', 112, 9.73],
-    ['CA', 'Strongly Agree', 54, 4.69],
-    ['OR', 'Strongly Disagree', 38, 3.3],
-    ['OR', 'Somewhat Disagree', 51, 4.43],
-    ['OR', 'Neutral', 67, 5.82],
-    ['OR', 'Somewhat Agree', 53, 4.6],
-    ['OR', 'Strongly Agree', 14, 1.22],
-    ['WA', 'Strongly Disagree', 31, 2.69],
-    ['WA', 'Somewhat Disagree', 73, 6.34],
-    ['WA', 'Neutral', 85, 7.38],
-    ['WA', 'Somewhat Agree', 73, 6.34],
-    ['WA', 'Strongly Agree', 35, 3.04]
+    ['CA', 'Strongly Disagree', 136, 21.55],
+    ['CA', 'Somewhat Disagree', 128, 20.29],
+    ['CA', 'Neutral', 201, 31.85],
+    ['CA', 'Somewhat Agree', 112, 17.75],
+    ['CA', 'Strongly Agree', 54, 8.56],
+    ['OR', 'Strongly Disagree', 38, 17.04],
+    ['OR', 'Somewhat Disagree', 51, 22.87],
+    ['OR', 'Neutral', 67, 30.04],
+    ['OR', 'Somewhat Agree', 53, 23.77],
+    ['OR', 'Strongly Agree', 14, 6.28],
+    ['WA', 'Strongly Disagree', 31, 10.44],
+    ['WA', 'Somewhat Disagree', 73, 24.58],
+    ['WA', 'Neutral', 85, 28.62],
+    ['WA', 'Somewhat Agree', 73, 24.58],
+    ['WA', 'Strongly Agree', 35, 11.78]
 ]
 WCP["2023"]["q14_3"] = [
     ['State', 'Agreement Level', 'Count', 'Percent'],
@@ -2108,21 +2108,21 @@ WCP["2023"]["q14_3"] = [
     ['All', 'Neutral', 276, 24.02],
     ['All', 'Somewhat Agree', 252, 21.93],
     ['All', 'Strongly Agree', 120, 10.44],
-    ['CA', 'Strongly Disagree', 164, 14.27],
-    ['CA', 'Somewhat Disagree', 131, 11.4],
-    ['CA', 'Neutral', 142, 12.36],
-    ['CA', 'Somewhat Agree', 129, 11.23],
-    ['CA', 'Strongly Agree', 65, 5.66],
-    ['OR', 'Strongly Disagree', 52, 4.53],
-    ['OR', 'Somewhat Disagree', 46, 4],
-    ['OR', 'Neutral', 59, 5.13],
-    ['OR', 'Somewhat Agree', 46, 4],
-    ['OR', 'Strongly Agree', 19, 1.65],
-    ['WA', 'Strongly Disagree', 47, 4.09],
-    ['WA', 'Somewhat Disagree', 61, 5.31],
-    ['WA', 'Neutral', 75, 6.53],
-    ['WA', 'Somewhat Agree', 77, 6.7],
-    ['WA', 'Strongly Agree', 36, 3.13]
+    ['CA', 'Strongly Disagree', 164, 25.99],
+    ['CA', 'Somewhat Disagree', 131, 20.76],
+    ['CA', 'Neutral', 142, 22.5],
+    ['CA', 'Somewhat Agree', 129, 20.44],
+    ['CA', 'Strongly Agree', 65, 10.3],
+    ['OR', 'Strongly Disagree', 52, 23.42],
+    ['OR', 'Somewhat Disagree', 46, 20.72],
+    ['OR', 'Neutral', 59, 26.58],
+    ['OR', 'Somewhat Agree', 46, 20.72],
+    ['OR', 'Strongly Agree', 19, 8.56],
+    ['WA', 'Strongly Disagree', 47, 15.88],
+    ['WA', 'Somewhat Disagree', 61, 20.61],
+    ['WA', 'Neutral', 75, 25.34],
+    ['WA', 'Somewhat Agree', 77, 26.01],
+    ['WA', 'Strongly Agree', 36, 12.16]
 ]
 
 // Now question 16 on the 2023 survey
@@ -2130,12 +2130,12 @@ WCP["2023"]["q15"] = [
     ['State', 'Affected By Closures', 'Count', 'Percent'],
     ['All', 'Yes', 761, 70.14],
     ['All', 'No', 324, 29.86],
-    ['CA', 'Yes', 447, 41.2],
-    ['CA', 'No', 153, 14.1],
-    ['OR', 'Yes', 154, 14.19],
-    ['OR', 'No', 53, 4.88],
-    ['WA', 'Yes', 160, 14.75],
-	['WA', 'No', 118, 10.88]
+    ['CA', 'Yes', 447, 74.5],
+    ['CA', 'No', 153, 25.5],
+    ['OR', 'Yes', 154, 74.4],
+    ['OR', 'No', 53, 25.6],
+    ['WA', 'Yes', 160, 57.55],
+	['WA', 'No', 118, 42.45]
 ]
 WCP["2023"]["q16"] = [
     ['State', 'Response to Closure', 'Count', 'Percent'],
@@ -2143,18 +2143,18 @@ WCP["2023"]["q16"] = [
     ['All', 'Worked in a job or business other than commercial fishing', 171, 22.47],
     ['All', 'Did not work in either fishery or non-fishery employment during the closure', 223, 29.3],
 	['All', 'Both fished in another fishery and worked in a job or business other than commercial fishing', 166, 21.81],
-	['CA', 'Fished in another fishery', 113, 14.85],
-	['CA', 'Worked in a job or business other than commercial fishing', 108, 14.19],
-	['CA', 'Did not work in either fishery or non-fishery employment during the closure', 113, 14.85],
-	['CA', 'Both fished in another fishery and worked in a job or business other than commercial fishing', 113, 14.85],
-	['OR', 'Fished in another fishery', 48, 6.31],
-	['OR', 'Worked in a job or business other than commercial fishing', 32, 4.2],
-	['OR', 'Did not work in either fishery or non-fishery employment during the closure', 51, 6.7],
-	['OR', 'Both fished in another fishery and worked in a job or business other than commercial fishing', 23, 3.02],
-	['WA', 'Fished in another fishery', 40, 5.26],
-	['WA', 'Worked in a job or business other than commercial fishing', 31, 4.07],
-	['WA', 'Did not work in either fishery or non-fishery employment during the closure', 59, 7.75],
-	['WA', 'Both fished in another fishery and worked in a job or business other than commercial fishing', 30, 3.94]
+	['CA', 'Fished in another fishery', 113, 25.28],
+	['CA', 'Worked in a job or business other than commercial fishing', 108, 24.16],
+	['CA', 'Did not work in either fishery or non-fishery employment during the closure', 113, 25.28],
+	['CA', 'Both fished in another fishery and worked in a job or business other than commercial fishing', 113, 25.28],
+	['OR', 'Fished in another fishery', 48, 31.17],
+	['OR', 'Worked in a job or business other than commercial fishing', 32, 20.78],
+	['OR', 'Did not work in either fishery or non-fishery employment during the closure', 51, 33.12],
+	['OR', 'Both fished in another fishery and worked in a job or business other than commercial fishing', 23, 14.94],
+	['WA', 'Fished in another fishery', 40, 25],
+	['WA', 'Worked in a job or business other than commercial fishing', 31, 19.38],
+	['WA', 'Did not work in either fishery or non-fishery employment during the closure', 59, 36.88],
+	['WA', 'Both fished in another fishery and worked in a job or business other than commercial fishing', 30, 18.75]
 ]
 WCP["2023"]["q17"] = [
     ['State', 'Employment Choice', 'Count', 'Percent'],
@@ -4154,6 +4154,58 @@ var REMAP_2017 = {"q1": "q1", "q10": "q10", "q11": "q11", "q12": "q12", "q14": "
         return parseInt(pct.exec(String(a[1]))[1], 10) - parseInt(pct.exec(String(b[1]))[1], 10);
       });
       WCP[y][slot] = [d[0]].concat(rows);
+    });
+  });
+})();
+// Harmonize category labels across waves so year toggling and compare mode
+// join on the same strings: collapse doubled spaces (2017/2020 q34), map the
+// 2017 hyphen percent brackets onto the later waves' en dash labels, and align
+// the 2017 wording of the q10 "not part" option.
+(function(){
+  var FIX = {
+    "1 - 10% more": "1 \u2013 10% more",
+    "11 - 25% more": "11 \u2013 25% more",
+    "26 - 50% more": "26 \u2013 50% more",
+    "50 - 100% more": "50 \u2013 100% more",
+    "I am not part of the fishing community": "I'm not part of the fishing community"
+  };
+  Object.keys(WCP).forEach(function(y){
+    Object.keys(WCP[y]).forEach(function(slot){
+      var d = WCP[y][slot];
+      for (var r = 1; r < d.length; r++) {
+        if (typeof d[r][1] !== "string") continue;
+        var v = d[r][1].replace(/\s{2,}/g, " ");
+        d[r][1] = FIX[v] || v;
+      }
+    });
+  });
+})();
+// A few questions were exported with inconsistent display order across waves
+// (q8 ran All->None in 2017/2020 but None->All later; Yes/No flipped on q26 and
+// q36). Sort them onto one canonical order in every wave, keeping state groups
+// intact; labels not listed keep their relative order after the listed ones.
+(function(){
+  var CANON = {
+    "q8": ["None", "Few", "Some", "Most", "All"],
+    "q10": ["As a collection of people", "As a place", "Both place and people", "I'm not part of the fishing community"],
+    "q18": ["0% or less", "1 \u2013 10% more", "11 \u2013 25% more", "26 \u2013 50% more", "50 \u2013 100% more", "Greater than 100% more", "Never choose another job"],
+    "q26": ["Yes", "No"],
+    "q36": ["Yes", "No"]
+  };
+  Object.keys(WCP).forEach(function(y){
+    Object.keys(CANON).forEach(function(slot){
+      var d = WCP[y][slot];
+      if (!d || d.length < 3) return;
+      var order = CANON[slot];
+      var rows = d.slice(1);
+      var firstIdx = {};
+      rows.forEach(function(r){ if (!(r[0] in firstIdx)) firstIdx[r[0]] = Object.keys(firstIdx).length; });
+      var pos = rows.map(function(r, i){
+        var ci = order.indexOf(String(r[1]));
+        return {r: r, s: firstIdx[r[0]], c: ci < 0 ? order.length : ci, i: i};
+      });
+      pos.sort(function(a, b){ return (a.s - b.s) || (a.c - b.c) || (a.i - b.i); });
+      WCP[y][slot] = [d[0]].concat(pos.map(function(p){ return p.r; }));
     });
   });
 })();

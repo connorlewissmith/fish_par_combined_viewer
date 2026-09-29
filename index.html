@@ -7,7 +7,7 @@
      <link rel="stylesheet" href="css/surveyTool.css">
      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="wcpDataAll.js?b=1790700979"></script>
+	<script src="wcpDataAll.js?b=1790707269"></script>
 	<script src ="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.2.0/math.js"></script>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -1901,9 +1901,12 @@ $("#question52").click(function(){
 		var REF_YEARS = {"2017":"2016","2020":"2019","2023":"2022","2026":"2025"};
 		var BASE_NOTE = "Question wording shown is from the 2026 survey; wording and response options vary slightly between years. Questions asked only in 2017 or 2020 are not yet included, and 2017 charts cover only the questions verified to match later waves.";
 		var CAVEATS = {
-			"2017": {"q8": "Caution: the direction of this scale in the 2017 data has not been verified against later years. Compare across years with care."},
+			"2017": {"q8": "Caution: the direction of this scale in the 2017 data has not been verified against later years. Compare across years with care.",
+				"q16": "In 2017 respondents could select every option that applied, so percentages sum to more than 100. Later surveys allowed one answer, so this chart is not directly comparable across years.",
+				"q27b": "The 2017 survey used different days-at-sea brackets than later years, so the categories do not line up across surveys."},
 			"2023": {"q8": "Caution: in the 2023 data shown here the proportion-of-contacts scale runs in the reverse direction from 2020 and 2026. Do not compare this chart across years until the 2023 data are rebuilt."},
-			"2026": {"q3": "The 2026 survey dropped the \"As long as I can\" option, so this chart has one fewer category than earlier years."}
+			"2026": {"q3": "The 2026 survey dropped the \"As long as I can\" option, so this chart has one fewer category than earlier years.",
+				"q7": "The 2026 data groups every value above 6 into '>6'; earlier surveys report 7-10 and '>10' separately."}
 		};
 
 		$("#stateFilter").after('<div id="yearFilter" style="margin:10px 0 4px 0;"><div style="font-weight:bold;">Survey Year</div>' +

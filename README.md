@@ -35,8 +35,16 @@ Edit `build_combined.py`, never the generated files.
   questions and six 2020-only questions are not yet included.
 - **Re-sorts percent-bracket categories numerically** — the prep script
   exports them string-sorted, which puts "100%" between "1-24%" and "25-49%".
-  (That bug is still live in the per-year viewers and in
-  `webtool_data_prod*.R` in `fish_par_survey`.)
+  (Fixed at the source for 2026 in `webtool_data_prod_2026.R`; the 2023-era
+  `webtool_data_prod.R` still has it.)
+- **Harmonizes category labels across waves** so year toggling and compare
+  mode join on identical strings: doubled spaces collapse (2017/2020 q34),
+  the 2017 hyphen pay brackets map onto the later waves' en-dash labels
+  (q18), and the 2017 wording of the q10 "not part" option is aligned.
+- **Normalizes display order for questions the waves exported differently**
+  (q8 ran All→None in 2017/2020 but None→All later; Yes/No flipped on q26
+  and q36; q10/q18 varied) so the column order no longer changes when the
+  year toggle flips.
 - **Pins each question's y-axis** to its maximum across all waves and states,
   so switching years never rescales the axis.
 - **Detects ordered-scale (Likert) matrix questions** from their headers and

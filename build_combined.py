@@ -75,6 +75,58 @@ parts.append("""// Percent-bracket categories are exported in string order ("100
     });
   });
 })();""")
+parts.append("""// Harmonize category labels across waves so year toggling and compare mode
+// join on the same strings: collapse doubled spaces (2017/2020 q34), map the
+// 2017 hyphen percent brackets onto the later waves' en dash labels, and align
+// the 2017 wording of the q10 "not part" option.
+(function(){
+  var FIX = {
+    "1 - 10% more": "1 \\u2013 10% more",
+    "11 - 25% more": "11 \\u2013 25% more",
+    "26 - 50% more": "26 \\u2013 50% more",
+    "50 - 100% more": "50 \\u2013 100% more",
+    "I am not part of the fishing community": "I'm not part of the fishing community"
+  };
+  Object.keys(WCP).forEach(function(y){
+    Object.keys(WCP[y]).forEach(function(slot){
+      var d = WCP[y][slot];
+      for (var r = 1; r < d.length; r++) {
+        if (typeof d[r][1] !== "string") continue;
+        var v = d[r][1].replace(/\\s{2,}/g, " ");
+        d[r][1] = FIX[v] || v;
+      }
+    });
+  });
+})();
+// A few questions were exported with inconsistent display order across waves
+// (q8 ran All->None in 2017/2020 but None->All later; Yes/No flipped on q26 and
+// q36). Sort them onto one canonical order in every wave, keeping state groups
+// intact; labels not listed keep their relative order after the listed ones.
+(function(){
+  var CANON = {
+    "q8": ["None", "Few", "Some", "Most", "All"],
+    "q10": ["As a collection of people", "As a place", "Both place and people", "I'm not part of the fishing community"],
+    "q18": ["0% or less", "1 \\u2013 10% more", "11 \\u2013 25% more", "26 \\u2013 50% more", "50 \\u2013 100% more", "Greater than 100% more", "Never choose another job"],
+    "q26": ["Yes", "No"],
+    "q36": ["Yes", "No"]
+  };
+  Object.keys(WCP).forEach(function(y){
+    Object.keys(CANON).forEach(function(slot){
+      var d = WCP[y][slot];
+      if (!d || d.length < 3) return;
+      var order = CANON[slot];
+      var rows = d.slice(1);
+      var firstIdx = {};
+      rows.forEach(function(r){ if (!(r[0] in firstIdx)) firstIdx[r[0]] = Object.keys(firstIdx).length; });
+      var pos = rows.map(function(r, i){
+        var ci = order.indexOf(String(r[1]));
+        return {r: r, s: firstIdx[r[0]], c: ci < 0 ? order.length : ci, i: i};
+      });
+      pos.sort(function(a, b){ return (a.s - b.s) || (a.c - b.c) || (a.i - b.i); });
+      WCP[y][slot] = [d[0]].concat(pos.map(function(p){ return p.r; }));
+    });
+  });
+})();""")
 # Per-slot y-axis maximum (percent) across every wave and state, so the axis
 # does not rescale when the year toggle flips. Only single-select tables
 # (State / category / Count / Percent) are pinned; matrix charts are left alone.
@@ -193,9 +245,12 @@ year_js = """
 \t\tvar REF_YEARS = {"2017":"2016","2020":"2019","2023":"2022","2026":"2025"};
 \t\tvar BASE_NOTE = "Question wording shown is from the 2026 survey; wording and response options vary slightly between years. Questions asked only in 2017 or 2020 are not yet included, and 2017 charts cover only the questions verified to match later waves.";
 \t\tvar CAVEATS = {
-\t\t\t"2017": {"q8": "Caution: the direction of this scale in the 2017 data has not been verified against later years. Compare across years with care."},
+\t\t\t"2017": {"q8": "Caution: the direction of this scale in the 2017 data has not been verified against later years. Compare across years with care.",
+\t\t\t\t"q16": "In 2017 respondents could select every option that applied, so percentages sum to more than 100. Later surveys allowed one answer, so this chart is not directly comparable across years.",
+\t\t\t\t"q27b": "The 2017 survey used different days-at-sea brackets than later years, so the categories do not line up across surveys."},
 \t\t\t"2023": {"q8": "Caution: in the 2023 data shown here the proportion-of-contacts scale runs in the reverse direction from 2020 and 2026. Do not compare this chart across years until the 2023 data are rebuilt."},
-\t\t\t"2026": {"q3": "The 2026 survey dropped the \\"As long as I can\\" option, so this chart has one fewer category than earlier years."}
+\t\t\t"2026": {"q3": "The 2026 survey dropped the \\"As long as I can\\" option, so this chart has one fewer category than earlier years.",
+\t\t\t\t"q7": "The 2026 data groups every value above 6 into '>6'; earlier surveys report 7-10 and '>10' separately."}
 \t\t};
 
 \t\t$("#stateFilter").after('<div id="yearFilter" style="margin:10px 0 4px 0;"><div style="font-weight:bold;">Survey Year</div>' +
